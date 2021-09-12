@@ -1,0 +1,26 @@
+{
+  "name": "allex_bootstrap5togglewebcomponent",
+  "version": "1.0.0",
+  "description": "AllexJS webcomponent with a toggle button for Bootstrap 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/allex-web-components/bootstrap5toggle.git"
+  },
+  "keywords": [
+    "ecosystem:AllexJS",
+    "bootstrap",
+    "5",
+    "toggle",
+    "button"
+  ],
+  "author": "Andrija Petrovic <andrija.hers@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allex-web-components/bootstrap5toggle/issues"
+  },
+  "homepage": "https://github.com/allex-web-components/bootstrap5toggle#readme"
+}

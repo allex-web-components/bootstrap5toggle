@@ -1,0 +1,22 @@
+{
+  "browserify": {
+    "dist/browserified.js": "index.js"
+  },
+  "dependencies": {
+    "js": [
+      "allex:app:lib",
+      "allex:jqueryelements:lib",
+      "allex:bootstrap:webcomponent"
+    ],
+    "css": [
+    ]
+  },
+  "additionaltargets": {
+    "js": [
+      ["dist", "bootstrap5-toggle.js"]
+    ],
+    "css": [
+      ["dist", "bootstrap5-toggle.css"]
+    ]
+  }
+}
