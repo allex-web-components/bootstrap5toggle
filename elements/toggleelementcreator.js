@@ -1,14 +1,3 @@
-(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-function createElements (execlib) {
-  'use strict';
-  var lib = execlib.lib,
-    lR = execlib.execSuite.libRegistry,
-    applib = lR.get('allex_applib');
-  
-  require('./toggleelementcreator')(lib, applib);
-}
-module.exports = createElements;
-},{"./toggleelementcreator":2}],2:[function(require,module,exports){
 function createToggleElement (lib, applib) {
   'use strict';
   var WebElement = applib.getElementType('WebElement');
@@ -57,12 +46,3 @@ function createToggleElement (lib, applib) {
   applib.registerElementType('BootstrapToggle', BootstrapToggleElement);
 }
 module.exports = createToggleElement;
-},{}],3:[function(require,module,exports){
-(function (execlib) {
-  'use strict';
-
-  require('./elements')(execlib);
-
-})(ALLEX);
-
-},{"./elements":1}]},{},[3]);
