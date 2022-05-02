@@ -28,6 +28,7 @@ function createToggleElement (lib, applib) {
       this.$element
       .bootstrapToggle('toggle')
       .on('change', this.onChanged.bind(this));
+      this.onChanged(null);
     }
   };
   BootstrapToggleElement.prototype.get_checked = function () {
@@ -50,7 +51,7 @@ function createToggleElement (lib, applib) {
 
   BootstrapToggleElement.prototype.onChanged = function (evnt) {
     var a = this.$element.is(':checked');
-    console.log(this.id, 'checked', a);
+    //console.log(this.id, 'checked', a);
     this.set('checked', this.$element.is(':checked'));
   };
 
