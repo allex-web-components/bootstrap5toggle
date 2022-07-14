@@ -25,6 +25,9 @@ function createToggleElement (lib, applib) {
   };
   BootstrapToggleElement.prototype.set_checked = function (checked) {
     this.checked = checked;
+    if (this.$element) {
+      this.$element.bootstrapToggle(checked ? 'on' : 'off');
+    }
     return true;
   };
   BootstrapToggleElement.prototype.set_enabled = function (enabled) {
